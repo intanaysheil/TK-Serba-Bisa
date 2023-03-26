@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="stylesheets/style.css" />
+
+    <!-- Library Calendar -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/color-calendar/dist/css/theme-basic.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/color-calendar/dist/css/theme-glass.css" />
+    <script src="https://cdn.jsdelivr.net/npm/color-calendar/dist/bundle.min.js"></script>
+
+    <title>TK Serba Bisa | Kelompok 2 |</title>
+  </head>
+
+  <body>
+    <!-- Navbar Start -->
+    <header>
+      <div class="navbar">
+        <div class="navs container">
+          <div class="logo-brand">
+            <img src="assets/img/logo.png" alt="" />
+          </div>
+          <ul class="list-group list-navs">
+            <li class="list-item"><a href="#navbar">Beranda</a></li>
+            <li class="list-item"><a href="#about">Profil</a></li>
+            <li class="list-item"><a href="#blog">Kegiatan</a></li>
+            <li class="list-item"><a href="#kontak">Kontak</a></li>
+          </ul>
+
+          <button class="btn btn-daftar" onclick="showmodal()">Daftar</button>
+        </div>
+      </div>
+    </header>
+    <!-- Navbar End -->
+
+    <!-- Hero Start -->
+    <div class="hero">
+      <div class="slideshow">
+        <img class="img-item" src="assets/img/home1.jpg" alt="" />
+        <img class="img-item" src="assets/img/home2.jpg" alt="" />
+        <img class="img-item" src="assets/img/bermain2.jpg" alt="" />
+      </div>
+      <div class="slidebutton">
+        <button class="btn btn-slide" onclick="slideItem(-1)"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="btn btn-slide" onclick="slideItem(+1)"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </div>
+    <!-- Hero End -->
+
+    <div class="container">
+      <div class="row">
+        <!-- Calender-->
+        <div class="calendar-section">
+          <div id="color-calendar"></div>
+        </div>
+
+        <!-- About Start -->
+        <div class="about" id="about">
+          <div class="title-section">
+            <h3>Profil</h3>
+            <p>
+              Taman Kanak Serba Bisa adalah sekolah yang berada di bawah naungan Yayasan Bina Sastra. Berdiri sejak tahun 2004, diketuai oleh Prof. Raka Ramadhan. Taman Kanak Serba Bisa menerapkan kurikulum Internasional dari Kyoto
+              University berbasis IT, juga mengedepankan pemahaman mengenai perbedaan dan toleransi.
+            </p>
+          </div>
+          <div class="content-section">
+            <div class="visi">
+              <h4>Visi :</h4>
+              <p align="center">"Mewujudkan generasi cilik yang sehat, beradab, mandiri, kreatif, terampil, berprestasi dan berdaya saing global.”</p>
+            </div>
+            <div class="misi">
+              <h4>Misi :</h4>
+              <ul class="list-group">
+                <li>
+                  <p>1. Menanamkan kepada anak sikap mandiri, terampil dalam kehidupan sehari-hari.</p>
+                </li>
+                <li>
+                  <p>2. Menciptakan pembelajaran yang kreatif dan menyenangkan.</p>
+                </li>
+                <li>
+                  <p>3. Menciptakan lingkungan yang sehat, bersih, tertib, aman, dan nyaman.</p>
+                </li>
+                <li>
+                  <p>4. Melatih anak untuk meraih prestasi sesuai potensi yang dimiliki.</p>
+                </li>
+                <li>
+                  <p>5. Mengenalkan pembelajaran yang berbasis IT dan cakap berbahasa Inggris.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- About End -->
+
+      <!-- Teacher Start -->
+      <div class="staff" id="staff">
+        <div class="title-section">
+          <h3>Guru & Staff</h3>
+        </div>
+        <div class="content-section">
+          <div class="card">
+            <div class="card-body">
+              <img src="assets/img/male.jpg" alt="" />
+              <h4>Raka Ramadhan</h4>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <img src="assets/img/male.jpg" alt="" />
+              <h4>Agung Peter Praditia</h4>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <img src="assets/img/female.jpg" alt="" />
+              <h4>Intan Ayu Nursheila</h4>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <img src="assets/img/male.jpg" alt="" />
+              <h4>Mulya Rusmana</h4>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <img src="assets/img/male.jpg" alt="" />
+              <h4>Aristarkus Demas</h4>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <img src="assets/img/male.jpg" alt="" />
+              <h4>Aldi Firmansyah</h4>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <img src="assets/img/female.jpg" alt="" />
+              <h4>Hanin Dhiya</h4>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <img src="assets/img/female.jpg" alt="" />
+              <h4>Isyana Saras</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog Start -->
+      <div class="blog" id="blog">
+        <div class="title-section">
+          <h3>Kegiatan Sekolah</h3>
+        </div>
+
+        <div class="content-section">
+          <div class="card">
+            <div class="card-body">
+              <img src="assets/img/news1.jpg" alt="" />
+              <h4>Study Tour</h4>
+              <p>Sabtu, 11 Desember 2010. Mengajak anak-anak mengunjungi Taman Wisata Cinangneng untuk bermain dan belajar di alam terbuka. Memberikan kesan baru kepada anak agar tidak bosan belajar.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <img src="assets/img/news2.jpg" alt="" />
+              <h4>Summer Camp</h4>
+              <p>
+                Jumat, 6 Juli 2012. Setelah sukses mengadakan Summer Camp with Monopoly pada tahun 2012, kini kembali diadakan di Mal Taman Anggrek pada 20 Juni 2012 - 1 Juli 2012. Para orang tua pun mendukung kegiatan ini, dan anak pun
+                sangat antusias dengan kegiatan ini.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <img src="assets/img/news3.jpg" alt="" />
+              <h4>Teacher Day</h4>
+              <p>Rabu, 25 November 2015. Memberi kesempatan kepada anak untuk lebih dekat dengan guru, dengan mendekor kelas bersama dan membuat kartu ucapan terimakasih untuk guru-guru.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Blog End -->
+
+      <div class="galeri" id="galeri">
+        <div class="title-section">
+          <h3>Galeri</h3>
+        </div>
+
+        <div class="content-section">
+          <div class="galeri-item"><img src="assets/img/galeri1.jpg" alt="" /></div>
+          <div class="galeri-item"><img src="assets/img/galeri2.jpg" alt="" /></div>
+          <div class="galeri-item"><img src="assets/img/galeri3.jpg" alt="" /></div>
+          <div class="galeri-item"><img src="assets/img/galeri4.jpg" alt="" /></div>
+          <div class="galeri-item"><img src="assets/img/galeri5.jpg" alt="" /></div>
+          <div class="galeri-item"><img src="assets/img/galeri6.jpg" alt="" /></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Start -->
+    <footer>
+      <div class="container">
+        <div class="logo-brand">
+          <img src="assets/img/logo.png" alt="" />
+        </div>
+
+        <div class="navs">
+          <div class="alamat">
+            <h4>Alamat</h4>
+            <a href="#"> Bellagio Mall lt.3, Kuningan, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta </a>
+          </div>
+          <div class="kontak" id="kontak">
+            <h4>Kontak</h4>
+            <ul class="list-group">
+              <li>
+                <a href="#"> Telp : (021) 8877665 </a>
+              </li>
+              <li>
+                <a href="#"> Fax : (021) 8877676 </a>
+              </li>
+              <li>
+                <a href="#"> E-mail : serbabisaschool@yahoo.com </a>
+              </li>
+            </ul>
+          </div>
+          <div class="sosmed">
+            <h4>Media Sosial</h4>
+            <ul class="list-group">
+              <li>
+                <a href="#" class="mx-2" role="button"><i class="fab fa-instagram"></i> TK Serba Bisa </a>
+              </li>
+              <li>
+                <a href="#" class="mx-2" role="button"><i class="fab fa-facebook-square"></i> TK Serba Bisa </a>
+              </li>
+              <li>
+                <a href="#" class="mx-2" role="button"><i class="fab fa-youtube"></i> Serba Bisa School Support </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p align="center">Copyright &copy; 2022 Taman Kanak Serba Bisa</p>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Form Daftar Start -->
+    <div class="modal" id="modalform">
+      <div class="overlay">
+        <div class="modal-body">
+          <div class="modal-header">
+            <div class="title">
+              <h2>Formulir Pendaftaran</h2>
+              <button class="btn" onclick="closemodal()"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+          </div>
+          <hr />
+          <div class="modal-content">
+            <div class="input-form">
+              <label for="nama">Nama Calon Siswa</label>
+              <input type="text" name="nama" />
+            </div>
+
+            <div class="input-form">
+              <label for="foto">Foto Calon Siswa</label>
+              <input type="file" name="foto" />
+            </div>
+
+            <hr />
+
+            <div class="input-form">
+              <label for="nama-ortu">Nama Orang Tua</label>
+              <input type="text" name="nama-ortu" />
+            </div>
+            <div class="input-form">
+              <label for="nohp">No Handphone</label>
+              <input type="text" name="nohp" />
+            </div>
+            <div class="input-form">
+              <label for="Alamat">Alamat</label>
+              <input type="text" name="Alamat" />
+            </div>
+
+            <hr />
+
+            <div class="input-form">
+              <label for="foto-akte">File Scan Akta kelahiran Calon Siswa</label>
+              <input type="file" name="foto-akte" />
+            </div>
+            <div class="input-form">
+              <label for="foto-ktp">File Scan KTP Orang Tua</label>
+              <input type="file" name="foto-ktp" />
+            </div>
+            <div class="input-form">
+              <label for="foto-akte">File Scan KK</label>
+              <input type="file" name="foto-akte" />
+            </div>
+            <hr />
+            <div class="modal-footer">
+              <button class="btn btn-daftar" onclick="closemodal()">Daftar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Form Daftar End -->
+  </body>
+
+  <script src="javascripts/script.js"></script>
+</html>
